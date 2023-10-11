@@ -81,7 +81,7 @@ class SoftmaxClassifier:
         probabilities = softmax(X@W)
 
         # Compute negative log likelihood cost
-        Yk = np.eye(self.num_classes)[y] # Numpy hack to create one-hot encoding
+        Yk = np.eye(self.num_classes)[y] # Numpy trick to create one-hot encoding
         totalcost = -np.sum(Yk * np.log(probabilities)) / n
 
         # Compute gradient of the cost w.r.t. W
