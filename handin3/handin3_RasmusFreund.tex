@@ -1,0 +1,50 @@
+\documentclass[english,11pt,a4paper,titlepage]{report}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{babel}
+\usepackage{listings}
+\title{Handin 3 - Semi-supervised deep learning}
+\author{Rasmus Freund - 201700273}
+\lstset{numbers=left,language=Python,frame=single,showtabs=false,breaklines=true,tabsize=4,xrightmargin=-20mm}
+\begin{document}
+	\maketitle\\
+	\subsection*{Short answer questions}
+	\begin{itemize}
+		\item Where are we ensuring that the finetuning does not affect the feature extractor?
+		\begin{itemize}
+			\item The \verb*|Net| class has been created with separate components for feature extraction and classification; which has additionally been split into two layers: \verb*|pretrainer| and \verb*|generalizer|. When finetuning (\verb*|optim.SGD(network.generalizer.parameters(),lr=0.01)|) we only update the \verb*|generalizer| parameters, not those of the feature extractor.  
+		\end{itemize}
+		\item How dose the code work that gets $s$ samples per class for the pre-training dataset
+		\begin{itemize}
+			\item The \verb*|get_subsampled_dataset| function iterates over each class in the dataset. For each class, it finds the indices where the target label matches the current class and randomly selects $k$ indices from that list which are then appended to the subset.
+		\end{itemize}
+		\item What is the \verb*|forward_call| parameter responsible for in the \verb*|train()| method (located in \verb*|network_training.py|)?
+		\begin{itemize}
+			\item It performs a forward pass through the network, calculating the loss.
+		\end{itemize}
+		\item Describe how the \verb*|augment()| method works (located \verb*|augmentations.py|).
+		\begin{itemize}
+			\item 
+		\end{itemize}
+		\item If we pre-train and finetune on the same dataset, is there any reason to do the finetuning step?
+		\begin{itemize}
+			\item 
+		\end{itemize}
+	\end{itemize}
+	\subsection*{Predictions}
+	\begin{itemize}
+		\item Will the collage and mixup data augmentations help achieve higher finetune accuracies? Which do you expect will be more effective?
+		\begin{itemize}
+			\item 
+		\end{itemize}
+		\item What relationship do you expect between the number of samples in the pre-training dataset and the finetuning accuracy? Does this change with data augmentations?
+		\begin{itemize}
+			\item 
+		\end{itemize}
+	\end{itemize}
+	
+	
+	
+	
+\end{document}
