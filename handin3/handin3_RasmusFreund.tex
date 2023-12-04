@@ -8,8 +8,8 @@
 \author{Rasmus Freund - 201700273}
 \lstset{numbers=left,language=Python,frame=single,showtabs=false,breaklines=true,tabsize=4,xrightmargin=-20mm}
 \begin{document}
-	\maketitle\\
-	\subsection*{Short answer questions}
+	\maketitle
+	\subsection*{Short answer questions}	
 	\begin{itemize}
 		\item Where are we ensuring that the finetuning does not affect the feature extractor?
 		\begin{itemize}
@@ -25,22 +25,22 @@
 		\end{itemize}
 		\item Describe how the \verb*|augment()| method works (located \verb*|augmentations.py|).
 		\begin{itemize}
-			\item 
+			\item The function iterates through the batch of images, randomly selects another image from the batch \\(\verb*|merge_indices[i]=np.random.choice(...)|). The current image (i) is excluded from the pool, so we're never getting an augment where an image has been augmented with itself. Augmentation is then applied (either mixup or collage), resulting in a new image and an interpolation value.
 		\end{itemize}
 		\item If we pre-train and finetune on the same dataset, is there any reason to do the finetuning step?
 		\begin{itemize}
-			\item 
+			\item Typically, no. However, there might be specific cases where this could be beneficial. One example could be transfer learning where we could pre-train the model as a simple classification network. After that, the fine-tuning head could then be utilized for more specific tasks.
 		\end{itemize}
 	\end{itemize}
 	\subsection*{Predictions}
 	\begin{itemize}
 		\item Will the collage and mixup data augmentations help achieve higher finetune accuracies? Which do you expect will be more effective?
 		\begin{itemize}
-			\item 
+			\item I doubt that data augmentation is going to improve accuracy in the case of these data sets. Changing the information in the images through augmentation is also going to change the true "meaning" of those images, since we're dealing with numbers and letters. Of the two types of augmentation, I suspect that mixup might perform better, since the entire structure of each number/letter will be kept in the augmented data.
 		\end{itemize}
 		\item What relationship do you expect between the number of samples in the pre-training dataset and the finetuning accuracy? Does this change with data augmentations?
 		\begin{itemize}
-			\item 
+			\item Generally, more samples in the pre-training should improve the accuracy of the fine-tuning head. However, given that the data is relatively simple and present clear patterns, a plateau is likely to be reached fairly quickly in terms of amount of training samples being used. Beyond this plateau, increasing the amount of samples will probably not lead to significant increases in accuracy. While data augmentation is, under most circumstances, a good way to increase accuracy when training on sparse data, I suspect it won't have a great impact in this network, mainly due to the reasons listed in the answer to the previous question.
 		\end{itemize}
 	\end{itemize}
 	
