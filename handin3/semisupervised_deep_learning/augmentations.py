@@ -17,6 +17,18 @@ def collage(batch_i, batch_j):
     interpolation = None
     
     ### YOUR CODE HERE
+    half_size = im_size // 2
+
+    # Array with the same shape as the input image
+    result = np.zeros_like(batch_i)
+
+    # Collage: Top-left and bottom-right from batch_j, top right and bottom_left from batch_i
+    result[:, :half_size, :half_size] = batch_j[:, :half_size, :half_size]
+    result[:, half_size:, half_size:] = batch_j[:, half_size:, half_size:]
+    result[:, :half_size, half_size:] = batch_i[:, :half_size, half_size:]
+    result[:, half_size:, :half_size] = batch_i[:, half_size:, :half_size]
+
+    interpolation = .5
     ### END CODE
 
     return result, interpolation
@@ -32,6 +44,7 @@ def mixup(batch_i, batch_j, alpha=0.3):
     result = None
 
     ### YOUR CODE HERE
+    result = interpolation * batch_i + (1 - interpolation) * batch_j
     ### END CODE
 
     return result, interpolation

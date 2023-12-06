@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{babel}
 \usepackage{listings}
+\usepackage{microtype}
 \title{Handin 3 - Semi-supervised deep learning}
 \author{Rasmus Freund - 201700273}
 \lstset{numbers=left,language=Python,frame=single,showtabs=false,breaklines=true,tabsize=4,xrightmargin=-20mm}
@@ -44,7 +45,31 @@
 		\end{itemize}
 	\end{itemize}
 	
+	\newpage
 	
+	\subsection*{Discussion}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\linewidth]{semisupervised_deep_learning/Figure_1}
+		\caption{Finetune accuracy of the network on the EMNIST dataset based on number of samples per class when pre-training on the MNIST dataset. Default settings for the network were used when creating this plot.}
+		\label{fig:figure1}
+	\end{figure}
+	
+	\begin{itemize}
+		\item How does the number of samples per class affect training performance? Does this get affected by the augmentations?
+		\begin{itemize}
+			\item When applying no augmentation, increasing the amount of samples per class always increases accuracy of the model, as seen in \ref{fig:figure1}. However, the difference in accuracy between 32 and 64 samples is relatively minor, indicating that the model is unlikely to get much better with additional samples. Using augmentations improves the performance of the model, especially at low number of samples per class. At a single sample per class, the accuracy is increased from about 50\% to about 62\% for both types of augmentation. This difference decreases as the number of samples increases, to the point where there is little to no difference between the three options (no augmentation, collage, or mixup). The difference in accuracy based on number of samples is less dramatic on the models that are utilizing augmentation. At 1 sample per class both the mixup and collage models sit at about 62\% accuracy, whereas the maximum accuracy, reached at 32 samples per class, is approximately 68\%. The performance of augmentation models will be discussed in further detail below.\\
+			\\
+		\end{itemize}
+		\item Which augmentation performs better? Why?
+		\begin{itemize}
+			\item 
+		\end{itemize}
+		\item Does finetuning and pre-training on the same dataset obtain better performance than pre-training on one dataset and finetuning on another? Why?
+		\begin{itemize}
+			\item 
+		\end{itemize}
+	\end{itemize}
 	
 	
 \end{document}

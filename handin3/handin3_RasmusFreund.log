@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.10.12) (format=lualatex 2023.12.3)  4 DEC 2023 17:37
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.10.12) (format=lualatex 2023.12.3)  6 DEC 2023 20:24
  restricted system commands enabled.
 **handin3_RasmusFreund.tex
 (./handin3_RasmusFreund.tex
@@ -297,55 +297,89 @@ File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
+
+(C:/Users/rasmu/AppData/Local/Programs/MiKTeX/tex/latex/microtype/microtype.sty
+Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
+(C:/Users/rasmu/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count280
+)
+\MT@toks=\toks24
+\MT@tempbox=\box55
+\MT@count=\count281
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
+LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@prot@toks=\toks25
+LaTeX Info: Redefining \rightprotrusion on input line 1078.
+LaTeX Info: Redefining \textls on input line 1368.
+\MT@outer@kern=\dimen156
+LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
+\MT@listname@count=\count282
+
+(C:/Users/rasmu/AppData/Local/Programs/MiKTeX/tex/latex/microtype/microtype-lua
+tex.def
+File: microtype-luatex.def 2023/03/13 v3.1a Definitions specific to luatex (RS)
+
+Lua module: microtype 2023/03/13 3.1a microtype module.
+Module microtype Info: overwriting function `keepligature' on input line 63
+LaTeX Info: Redefining \lsstyle on input line 688.
+LaTeX Info: Redefining \lslig on input line 688.
+\MT@outer@space=\skip53
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(C:/Users/rasmu/AppData/Local/Programs/MiKTeX/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
+))
 (C:/Users/rasmu/AppData/Local/Programs/MiKTeX/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 (C:/Users/rasmu/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-lua
 tex.def
 File: l3backend-luatex.def 2023-11-09 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count280
+\l__color_backend_stack_int=\count283
 Inserting `l3color' in `luaotfload.parse_color'.
-\l__pdf_internal_box=\box55
+\l__pdf_internal_box=\box56
 ) (./handin3_RasmusFreund.aux)
 \openout1 = handin3_RasmusFreund.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-0.
+1.
 
 (C:/Users/rasmu/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 (C:/Users/rasmu/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count281
-\scratchdimen=\dimen156
-\scratchbox=\box56
-\nofMPsegments=\count282
-\nofMParguments=\count283
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count284
-\MPscratchDim=\dimen157
-\MPnumerator=\count285
-\makeMPintoPDFobject=\count286
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count284
+\scratchdimen=\dimen157
+\scratchbox=\box57
+\nofMPsegments=\count285
+\nofMParguments=\count286
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count287
+\MPscratchDim=\dimen158
+\MPnumerator=\count288
+\makeMPintoPDFobject=\count289
+\everyMPtoPDFconversion=\toks27
 )
 (C:/Users/rasmu/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-b
 ase.sty
@@ -357,29 +391,77 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count287
- [1
+\c@lstlisting=\count290
+LaTeX Info: Redefining \microtypecontext on input line 11.
+Package microtype Info: Applying patch `item' on input line 11.
+Package microtype Info: Applying patch `toc' on input line 11.
+Package microtype Info: Applying patch `eqnum' on input line 11.
+Package microtype Info: Applying patch `footnote' on input line 11.
+Package microtype Info: Applying patch `verbatim' on input line 11.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 11.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+
+(C:/Users/rasmu/AppData/Local/Programs/MiKTeX/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+[1
 
 {C:/Users/rasmu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-6.
+7.
 
 (C:/Users/rasmu/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (26.62543pt too wide) in paragraph at lines 16--17
-\T1/lmr/m/n/10.95 tun-ing ([]\T1/lmtt/m/n/10.95 optim.SGD(network.generalizer.pa
-rameters(),lr=0.01)\T1/lmr/m/n/10.95 )
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (6.35814pt too wide) in paragraph at lines 17--18
+\T1/lmr/m/n/10.95 ([]\T1/lmtt/m/n/10.95 optim.SGD(network.generalizer.parameters
+(),lr=0.01)\T1/lmr/m/n/10.95 ) we
  []
 
 
-Overfull \hbox (13.09036pt too wide) in paragraph at lines 26--27
+Overfull \hbox (7.2729pt too wide) in paragraph at lines 27--28
 []\T1/lmr/m/n/10.95 De-scribe how the []\T1/lmtt/m/n/10.95 augment() \T1/lmr/m/
 n/10.95 method works (lo-cated []\T1/lmtt/m/n/10.95 augmentations.py\T1/lmr/m/n
 /10.95 ). 
  []
 
-[1] [2] (./handin3_RasmusFreund.aux)
+[1] [2]
+<semisupervised_deep_learning/Figure_1.png, id=19, 462.528pt x 346.896pt>
+File: semisupervised_deep_learning/Figure_1.png Graphic file (type png)
+<use semisupervised_deep_learning/Figure_1.png>
+Package luatex.def Info: semisupervised_deep_learning/Figure_1.png  used on inp
+ut line 53.
+(luatex.def)             Requested size: 251.9989pt x 188.99898pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+
+ []
+
+[3<./semisupervised_deep_learning/Figure_1.png>] [4]
+(./handin3_RasmusFreund.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
@@ -387,15 +469,15 @@ L3 programming layer <2023-11-09>
 )
 
 Here is how much of LuaTeX's memory you used:
- 4941 strings out of 476598
- 100000,1977958 words of node,token memory allocated
- 495 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 9 attribute, 53 glue_spec,
- 6 attribute_list, 1 write nodes
-   avail lists: 2:405,3:122,4:9,5:230,6:25,7:4837,8:1,9:191,10:7,11:285
- 26832 multiletter control sequences out of 65536+600000
+ 7085 strings out of 476598
+ 125240,1977958 words of node,token memory allocated
+ 547 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 11
+ attribute, 53 glue_spec, 7 attribute_list, 1 write nodes
+   avail lists: 2:426,3:117,4:56,5:249,6:26,7:4891,8:1,9:192,10:19,11:285
+ 28948 multiletter control sequences out of 65536+600000
  39 fonts using 2337199 bytes
- 57i,6n,62p,698b,277s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,62p,1146b,319s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/rasmu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/U
 sers/rasmu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users
 /rasmu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -405,9 +487,9 @@ C:/Users/rasmu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C
 sers/rasmu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/rasmu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users
 /rasmu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on handin3_RasmusFreund.pdf (3 pages, 145122 bytes).
+Output written on handin3_RasmusFreund.pdf (5 pages, 179744 bytes).
 
-PDF statistics: 44 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 52 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
