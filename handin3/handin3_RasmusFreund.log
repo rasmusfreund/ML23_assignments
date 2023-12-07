@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.10.12) (format=lualatex 2023.12.3)  6 DEC 2023 20:24
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.10.12) (format=lualatex 2023.12.3)  7 DEC 2023 14:03
  restricted system commands enabled.
 **handin3_RasmusFreund.tex
 (./handin3_RasmusFreund.tex
@@ -460,7 +460,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--63
 
  []
 
-[3<./semisupervised_deep_learning/Figure_1.png>] [4]
+[3<./semisupervised_deep_learning/Figure_1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+[4]
+<semisupervised_deep_learning/same_pretrain_finetune.png, id=27, 925.056pt x 34
+6.896pt>
+File: semisupervised_deep_learning/same_pretrain_finetune.png Graphic file (typ
+e png)
+<use semisupervised_deep_learning/same_pretrain_finetune.png>
+Package luatex.def Info: semisupervised_deep_learning/same_pretrain_finetune.pn
+g  used on input line 77.
+(luatex.def)             Requested size: 323.9978pt x 121.5001pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+[5<./semisupervised_deep_learning/same_pretrain_finetune.png>]
 (./handin3_RasmusFreund.aux)
  ***********
 LaTeX2e <2023-11-01>
@@ -469,15 +498,15 @@ L3 programming layer <2023-11-09>
 )
 
 Here is how much of LuaTeX's memory you used:
- 7085 strings out of 476598
+ 7100 strings out of 476598
  125240,1977958 words of node,token memory allocated
  547 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 11
  attribute, 53 glue_spec, 7 attribute_list, 1 write nodes
-   avail lists: 2:426,3:117,4:56,5:249,6:26,7:4891,8:1,9:192,10:19,11:285
- 28948 multiletter control sequences out of 65536+600000
+   avail lists: 2:413,3:113,4:57,5:253,6:25,7:4859,8:1,9:188,10:19,11:312
+ 28960 multiletter control sequences out of 65536+600000
  39 fonts using 2337199 bytes
- 57i,6n,62p,1146b,319s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,62p,1146b,416s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/rasmu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/U
 sers/rasmu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users
 /rasmu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -487,9 +516,9 @@ C:/Users/rasmu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C
 sers/rasmu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Use
 rs/rasmu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users
 /rasmu/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on handin3_RasmusFreund.pdf (5 pages, 179744 bytes).
+Output written on handin3_RasmusFreund.pdf (6 pages, 230356 bytes).
 
-PDF statistics: 52 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

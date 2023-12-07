@@ -30,7 +30,7 @@
 		\end{itemize}
 		\item If we pre-train and finetune on the same dataset, is there any reason to do the finetuning step?
 		\begin{itemize}
-			\item Typically, no. However, there might be specific cases where this could be beneficial. One example could be transfer learning where we could pre-train the model as a simple classification network. After that, the fine-tuning head could then be utilized for more specific tasks.
+			\item Typically, no. However, there might be specific cases where this could be beneficial. One example could be transfer learning where we could pre-train the model as a simple classification network. After that, the fine-tuning head could then be utilized for more specific tasks. In this task, I would expect a more significant improvement on the EMNIST dataset due to its' complexity, whereas I doubt much can be improved between pre-training and finetuning on the MNIST data.
 		\end{itemize}
 	\end{itemize}
 	\subsection*{Predictions}
@@ -63,13 +63,29 @@
 		\end{itemize}
 		\item Which augmentation performs better? Why?
 		\begin{itemize}
-			\item 
+			\item The data reveals that both mixup and collage augmentations provide a substantial boost in accuracy when pre-training with a limited number of samples per class on the MNIST dataset. This improvement is especially notable at the lower end, where having only one sample per class, both augmentation strategies increase the model's accuracy on the EMNIST dataset by around 12 percentage points compared to the non-augmented approach. This improvement indicates that both strategies effectively combat overfitting by generating more diverse training examples from limited data.\\
+			
+			Interestingly, the collage augmentation, initially matching the mixup augmentation, indicates that despite the potential complexity and disjointed nature of the images it creates, it is equally effective as mixup at lower sample sizes. The collage's method of recombining different image parts likely encourages the model to focus on more localized features and to learn from a variety of patterns, which can be beneficial when each class has very few samples.\\
+			
+			The near-identical performance of mixup and collage augmentations throughout the range of sample sizes is quite interesting, as one might expect the more "natural" image blends produced by mixup to consistently outperform the more artificial constructs of collage. However, the data shows that for this task, both augmentation strategies are equally viable in enhancing the model's capacity to generalize from MNIST to EMNIST. This could be due to both methods providing a form of regularization that prevents overfitting, albeit in different ways.
+			\newpage
 		\end{itemize}
 		\item Does finetuning and pre-training on the same dataset obtain better performance than pre-training on one dataset and finetuning on another? Why?
 		\begin{itemize}
-			\item 
+			\item \begin{figure}
+				\centering
+				\includegraphics[width=0.9\linewidth]{semisupervised_deep_learning/same_pretrain_finetune}
+				\caption{Left: network performance when pre-trained and finetuned on MNIST dataset; Right: network performance when pre-trained and finetuned on EMNIST dataset}
+				\label{fig:samepretrainfinetune}
+			\end{figure}
+			As seen on the left plot of \ref{fig:samepretrainfinetune}, pre-training and finetuning on the MNIST dataset leads to a high accuracy of approximately 95\% regardless of the augmentation technique used or not used. The right plot shows network performance when pre-training and finetuning on EMNIST. As perhaps one might expect, the accuracy is generally lower than for MNIST due to the inhently more complex nature of the EMNIST dataset.\\
+			
+			Since the network pre-trained on MNIST and finetuned on EMNIST has worse performance than either of the networks presented here, we can conclude that, while some features are certainly transferable between the two sets, it appears that some features of the EMNIST data set must be learned through pre-training.\\
+			
+			In conclusion, the network performs best when pre-training and fine-tuning on MNIST due to its simplicity and the network's ability to specialize in the specific features of the digits. Performance drops when working with EMNIST due to its complexity and further drops when transferring from MNIST to EMNIST due to the additional adaptation required by the network to handle a new set of characters.
 		\end{itemize}
 	\end{itemize}
 	
+	If would've like to include a section on pre-training on EMNIST and finetuning on MNIST to compare, but unfortunately neither time or character limit allows for this.
 	
 \end{document}
